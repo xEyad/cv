@@ -384,6 +384,7 @@ font-size:13px;
 
 .filter li a:hover {
   color: #cd5353;
+
 }
 
 
@@ -395,10 +396,14 @@ font-size:13px;
 }
 
 
-
+.work{
+  display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
 
 .item {
-
+  padding: 10px;
   position: relative;
 margin-bottom:30px;
 }
@@ -421,10 +426,10 @@ margin-bottom:30px;
 
 .item a .desc {
   background: rgba(205, 83, 83, 0.95) none repeat scroll 0 0;
-  height: 100%;
+  height: calc( 100% - 20px );
   position: absolute;
   text-align: center;
-  width: 100%;
+  width: calc( 100% - 20px );
   z-index: 2;
   opacity:0;
 
@@ -433,6 +438,7 @@ margin-bottom:30px;
 
 .item a .desc:hover{
 opacity:1;
+
 }
 
 
