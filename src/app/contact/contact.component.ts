@@ -11,5 +11,14 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
   }
+  downloadFile() {
+    let link = document.createElement('a');
+    link.setAttribute('type', 'hidden');
+    link.href = 'assets/cv.pdf';
+    link.download = 'Eyad cv.pdf';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
 
 }
