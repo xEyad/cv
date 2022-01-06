@@ -1,0 +1,295 @@
+element {
+  display: block;
+}
+.bgWhite {
+  background: #ffffff;
+}
+.ofsInBottom {
+  padding-bottom: 60px !important;
+}
+.about {
+	overflow: hidden;
+}
+.main-title {
+	border-bottom: 1px solid #efefef;
+	padding: 30px 10px 2px 40px;
+	position: relative;
+}
+.about .profile h1, .main-title h1 {
+	font-family: 'open_sansextrabold',Arial,sans-serif;
+}
+.main-title .divider {
+	left: 30px;
+	position: absolute;
+	top: 50px;
+}
+.content {
+	padding: 40px;
+}
+.margBSmall {
+	margin-bottom: 30px !important;
+}
+.margTSmall {
+	margin-top: 30px !important;
+}
+.about .profile h1 {
+	font-size: 28px;
+	line-height: 25px;
+}
+.about .profile h3 {
+	font-size: 22px;
+	color: #777777;
+}
+.info ul.info-list {
+	border: 1px solid #efefef;
+	text-align: center;
+}
+.info ul.info-list li {
+	border-bottom: 1px solid #efefef;
+	background: #fafafa;
+	font-size: 14px;
+}
+.info ul.info-list li .inf {
+	width: 35%;
+	background: #ffffff;
+	left: -1px;
+	position: relative;
+	border-right: 1px solid #efefef;
+	color: #333333;
+}
+.info ul.info-list li .value {
+	width: 63%;
+	color: #666666;
+}
+.info ul.info-list li .inf, .info ul.info-list li .value {
+	display: inline-block;
+	padding: 8px 0;
+}
+
+// Experience section
+.exp {
+	padding-left: 50px;
+	padding-top: 20px;
+	position: relative;
+	margin-bottom: 10px;
+}
+.exp .hgroup {
+	margin-bottom: 5px;
+}
+.exp .hgroup h4 {
+	text-transform: none;
+}
+.exp .hgroup h6 {
+	text-transform: none;
+	font-size: 12px;
+	color: #666666;
+}
+.exp .hgroup h6 i {
+	color: #cccccc;
+	margin-right: 5px;
+}
+.exp .hgroup h6 span.current {
+	background: #cd5353;
+}
+.exp .hgroup h6 span.current {
+	color: #ffffff;
+	background: #cd5353;
+	border-radius: 6px;
+	padding: 1px 12px;
+}
+.timeline {
+	position: relative;
+}
+.timeline::before {
+	background: #ededed;
+	background: -moz-linear-gradient(top, #ededed 1%, #ededed 75%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ededed), color-stop(75%,#ededed), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top, #ededed 1%,#ededed 75%,#ffffff 100%);
+	background: -o-linear-gradient(top, #ededed 1%,#ededed 75%,#ffffff 100%);
+	background: -ms-linear-gradient(top, #ededed 1%,#ededed 75%,#ffffff 100%);
+	background: linear-gradient(to bottom, #ededed 1%,#ededed 75%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 );
+	bottom: 0;
+	content: "";
+	left: 18px;
+	position: absolute;
+	top: 0;
+	width: 3px;
+	height: 100%;
+}
+.timeline.experience::after {
+	content: '\e8ba';
+}
+.timeline::after {
+	background: #ffffff;
+	border: 3px solid #efefef;
+	font-family: 'fontello';
+	top: 0;
+	left: -5px;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	text-align: center;
+	color: #333333;
+	font-size: 20px;
+	line-height: 45px;
+}
+.margTop {
+	margin-top: 60px !important;
+}
+.tCenter {
+	text-align: center;
+}
+.block.service .ico {
+	color: #cd5353;
+}
+.block.service .ico {
+	font-size: 30px;
+	margin-bottom: 10px;
+	color: #cd5353;
+}
+.block.service .det h3 {
+	font-size: 13px;
+}
+.block.service {
+  justify-content: center;
+  display: flex;
+  .col-md-4{
+    padding:5px;
+  }
+}
+.but.opc-1.ico, .but.opc-2.ico, .but.opc-3.ico {
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: relative;
+}
+.but.opc-1 {
+	background: #33373d;
+}
+.but.ico {
+	padding: 8px 25px 8px 45px;
+}
+.but.opc-1.ico::before, .but.opc-1.ico::after {
+	content: '\e864';
+}
+.but.opc-1.ico::before, .but.opc-1.ico::after, .but.opc-2.ico::before, .but.opc-2.ico::after, .but.opc-3.ico::before, .but.opc-3.ico::after {
+	position: absolute;
+	left: 15px;
+	padding: 0 1px;
+	font-family: 'fontello';
+	font-size: 15px;
+}
+.but.opc-1.ico::after, .but.opc-2.ico::after, .but.opc-3.ico::after {
+	opacity: 0;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+.but.opc-1.ico::before, .but.opc-1.ico::after {
+	content: '';
+}
+.but.opc-2 {
+	background: #cd5353;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+.but {
+	padding: 8px 25px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 12px;
+	display: inline-block;
+}
+
+.ofsInTop {
+	padding-top: 60px !important;
+}
+.ofsInTop {
+	padding-top: 60px !important;
+}
+.button {
+	position: relative;
+}
+.main-title h1 {
+	font-size: 15px;
+}
+.main-title h1 {
+	margin-bottom: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #333333;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.button::before {
+	background: #efefef;
+	content: "";
+	height: 1px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.button .divider {
+	left: 0;
+	width: 100%;
+	position: absolute;
+	top: -13px;
+	text-align: center;
+}
+.divider-m {
+	position: relative;
+}
+
+.divider-m::before {
+	background: #efefef;
+	content: "";
+	height: 1px;
+	left: 50%;
+	margin-left: -60px;
+	position: absolute;
+	top: 13px;
+	width: 120px;
+}
+.divider-m .zigzag.medium, .divider .zigzag.large {
+	stroke: #cd5353;
+}
+.divider-m .zigzag.medium, .divider .zigzag.large {
+	stroke: #cd5353;
+	stroke-width: 4.3;
+}
+.zigzag.medium {
+	width: 6%;
+	margin: 0 auto;
+}
+.zigzag.large, .zigzag.medium {
+	background: #ffffff;
+}
+.zigzag {
+	fill: none;
+	stroke-miterlimit: 10;
+	stroke-width: 3.7;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+
+.button .zigzag.large {
+	position: absolute;
+	left: 50%;
+	margin-left: -28px;
+}
+.zigzag.large {
+	padding: 0 10px;
+}
+.zigzag.large, .zigzag.medium {
+	background: #ffffff;
+}
