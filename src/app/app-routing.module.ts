@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SectionSelectorComponent } from './section-selector/section-selector.component';
+import { AboutComponent } from './about/about.component';
 
 
 const routes: Routes = [
-  { path: 'about', component: SectionSelectorComponent },
-  { path: '**', component: SectionSelectorComponent }
+  { path: 'about', component: AboutComponent },
+  { path: '**', component: AboutComponent }
 ];
 
 @NgModule({

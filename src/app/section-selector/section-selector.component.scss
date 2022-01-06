@@ -1,0 +1,96 @@
+img {
+	height: auto;
+	max-width: 100%;
+}
+img {
+	display: inline-block;
+	vertical-align: middle;
+}
+.img-profile {
+	position: relative;
+}
+.img-profile .name-profile {
+	left: -13%;
+	position: absolute;
+	top: 23.2%;
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	background: -moz-linear-gradient(left, rgba(51,55,61,1) 0%, rgba(51,55,61,0) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(51,55,61,1)), color-stop(100%,rgba(51,55,61,0)));
+	background: -webkit-linear-gradient(left, rgba(51,55,61,1) 0%,rgba(51,55,61,0) 100%);
+	background: -o-linear-gradient(left, rgba(51,55,61,1) 0%,rgba(51,55,61,0) 100%);
+	background: -ms-linear-gradient(left, rgba(51,55,61,1) 0%,rgba(51,55,61,0) 100%);
+	background: linear-gradient(to left, rgba(51,55,61,1) 0%,rgba(51,55,61,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33373d', endColorstr='#0033373d',GradientType=0 );
+}
+
+figcaption span {
+	color: white;
+}
+ol, ul {
+	list-style: none;
+}
+.main-nav ul li {
+	position: relative;
+	border-bottom: 1px solid #26292e;
+}
+.main-nav li a.active {
+	background: #cd5353;
+}
+.main-nav li a.active {
+	color: #ffffff;
+	background: #cd5353;
+}
+.main-nav ul li a {
+	display: table;
+	text-align: right;
+	background: #33373d;
+	color: #85878b;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 15px 25px;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-ms-transition-property: color;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	width: 100%;
+}
+.main-nav ul li a .simple-icon {
+	position: absolute;
+	left: 25px;
+	font-size: 22px;
+}
+
+
+.bgWhite {
+	background: #ffffff;
+}
+.ofsBSmall {
+	padding-bottom: 20px !important;
+}
+.ofsTSmall {
+	padding-top: 20px !important;
+}
+.tCenter {
+	text-align: center;
+}
+.social {
+	display: flex;
+	justify-content: center;
+  li{
+    img{
+      width: 30px;
+    }
+      margin-right: 10px;
+      &:hover{
+        color: red;
+      }
+  }
+}
