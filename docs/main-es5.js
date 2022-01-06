@@ -1608,7 +1608,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.faCamera = _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faCamera"];
         this.faPhone = _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faPhone"];
         this.faUser = _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faUser"];
-        this._activeSelection = 1;
+        this._activeSelection = 0;
         this.activeSelection = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
       }
 
