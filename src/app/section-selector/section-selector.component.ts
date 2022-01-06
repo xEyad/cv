@@ -9,7 +9,7 @@ export class SectionSelectorComponent implements OnInit {
   faCamera = faCamera;
   faPhone = faPhone;
   faUser = faUser;
-  _activeSelection:number = 1;
+  _activeSelection:number = 0;
   @Output() activeSelection = new EventEmitter<number>();
   constructor() { }
 
