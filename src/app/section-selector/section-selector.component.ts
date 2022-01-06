@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 import { faCamera, faUser,faPhone} from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-section-selector',
@@ -9,9 +9,18 @@ export class SectionSelectorComponent implements OnInit {
   faCamera = faCamera;
   faPhone = faPhone;
   faUser = faUser;
+  _activeSelection:number = 0;
+  @Output() activeSelection = new EventEmitter<number>();
   constructor() { }
 
   ngOnInit() {
+    this.setSelection(this._activeSelection);
+  }
+
+  setSelection(val)
+  {
+    this._activeSelection = val;
+    this.activeSelection.emit(this._activeSelection);
   }
 
 }

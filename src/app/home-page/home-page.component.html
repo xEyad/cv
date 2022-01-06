@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row py-5 ">
+
+    <div class="col-3">
+      <app-section-selector (activeSelection)="selectedView=$event"></app-section-selector>
+    </div>
+    <div class="col-9 right-content">
+      <app-about *ngIf="selectedView==0"></app-about>
+      <app-contact  *ngIf="selectedView==1" ></app-contact>
+      <app-portfolio  *ngIf="selectedView==2" ></app-portfolio>
+    </div>
+  </div>
+</div>
