@@ -1,35 +1,121 @@
 <!--Portfolio -->
-<section id="portfolio" class="bgWhite ofsInBottom active" style="display: block; position: static; visibility: visible;">
-<div class="portfolio">
-  <!--Main title-->
+<section
+  id="portfolio"
+  class="bgWhite ofsInBottom active"
+  style="display: block; position: static; visibility: visible"
+>
+  <div class="portfolio">
+    <!--Main title-->
 
-  <div class="main-title">
-    <h1>my works</h1>
-    <div class="divider">
-      <div class="zigzag large clearfix" data-svg-drawing="yes">
-        <svg
-          xml:space="preserve"
-          viewBox="0 0 69.172 14.975"
-          width="37"
-          height="28"
-          y="0px"
-          x="0px"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-        >
-          <path
-            d="M1.357,12.26 10.807,2.81 20.328,12.332
+    <div class="main-title">
+      <h1>my works</h1>
+      <div class="divider">
+        <div class="zigzag large clearfix" data-svg-drawing="yes">
+          <svg
+            xml:space="preserve"
+            viewBox="0 0 69.172 14.975"
+            width="37"
+            height="28"
+            y="0px"
+            x="0px"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+          >
+            <path
+              d="M1.357,12.26 10.807,2.81 20.328,12.332
 				29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "
-            style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0"
-          ></path>
-        </svg>
+              style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0"
+            ></path>
+          </svg>
+        </div>
       </div>
     </div>
+
+    <!--End main title-->
+
+    <!--Content-->
+    <div class="content">
+      <!--Block content-->
+      <div class="block-content">
+        <!--Works-->
+        <div class="works">
+          <h3>Portfolio</h3>
+          <p>
+            You can find portfolio images for apps and systems i created in this
+            <a
+              href="https://drive.google.com/drive/folders/1o0rgJ3f4htCBNtM_UN9ktwYSRfa61Gc-"
+              target="_blank"
+              >link</a
+            >
+          </p>
+
+          <h3 class="mt-5">Technical demos</h3>
+          <p>
+            Here is some apps that were created solely to demonstrate techincal
+            prowess or feature
+          </p>
+          <ul>
+            <li>
+              <a href="https://xeyad.github.io/maze_warrior" target="_blank"
+                >Visual pathfinder</a
+              >
+            </li>
+            <li>
+              <a href="https://xeyad.github.io/widgets-demo" target="_blank"
+                >Dynamic widgets builder</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--End content-->
+
+    <!--Button-->
+    <div class="button ofsInTop tCenter clearfix">
+      <div class="divider">
+        <div class="zigzag large clearfix" data-svg-drawing="yes">
+          <svg
+            xml:space="preserve"
+            viewBox="0 0 69.172 14.975"
+            width="37"
+            height="28"
+            y="0px"
+            x="0px"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+          >
+            <path
+              d="M1.357,12.26 10.807,2.81 20.328,12.332
+			29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "
+              style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <!--Row-->
+      <div class="row">
+        <div class="col-md-12">
+          <a href="#" class="animated-button1" (click)="downloadFile()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Download my cv
+          </a>
+        </div>
+      </div>
+      <!--End row-->
+    </div>
+    <!--End button-->
   </div>
+</section>
+<!--End portfolio-->
 
-  <!--End main title-->
-
+<ng-template #tempDisabled>
   <!--Content-->
   <div class="content">
     <!--Block content-->
@@ -67,7 +153,7 @@
                 >
                   <path
                     d="M1.357,12.26 10.807,2.81 20.328,12.332
-		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "
+      29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "
                     style="
                       stroke-dasharray: 93.9851, 93.9851;
                       stroke-dashoffset: 0;
@@ -84,47 +170,49 @@
         <div class="row">
           <ul class="work">
             <ng-container *ngFor="let item of items">
-            <li class="col-md-4">
-              <!--Item-->
-              <div class="item web">
-                <a class="box" href="case-study/waterway">
-                  <div class="desc">
-                    <h3 class="proj-desc">
-                      Project Name
-                      <span class="zigzag work clearfix" data-svg-drawing="yes">
-                        <svg
-                          xml:space="preserve"
-                          viewBox="0 0 69.172 14.975"
-                          width="25"
-                          height="10"
-                          y="0px"
-                          x="0px"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          xmlns="http://www.w3.org/2000/svg"
-                          version="1.1"
+              <li class="col-md-4">
+                <!--Item-->
+                <div class="item web">
+                  <a class="box" href="case-study/waterway">
+                    <div class="desc">
+                      <h3 class="proj-desc">
+                        Project Name
+                        <span
+                          class="zigzag work clearfix"
+                          data-svg-drawing="yes"
                         >
-                          <path
-                            d="M1.357,12.26 10.807,2.81 20.328,12.332
-		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "
-                            style="
-                              stroke-dasharray: 93.9851, 93.9851;
-                              stroke-dashoffset: 0;
-                            "
-                          ></path>
-                        </svg>
-                      </span>
+                          <svg
+                            xml:space="preserve"
+                            viewBox="0 0 69.172 14.975"
+                            width="25"
+                            height="10"
+                            y="0px"
+                            x="0px"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns="http://www.w3.org/2000/svg"
+                            version="1.1"
+                          >
+                            <path
+                              d="M1.357,12.26 10.807,2.81 20.328,12.332
+      29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "
+                              style="
+                                stroke-dasharray: 93.9851, 93.9851;
+                                stroke-dashoffset: 0;
+                              "
+                            ></path>
+                          </svg>
+                        </span>
 
-                      <span>web design</span>
-                    </h3>
-                  </div>
+                        <span>web design</span>
+                      </h3>
+                    </div>
 
-                  <img alt="" src="assets/profile.jpg" />
-                </a>
-              </div>
-              <!--End item-->
-            </li>
-          </ng-container>
-
+                    <img alt="" src="assets/profile.jpg" />
+                  </a>
+                </div>
+                <!--End item-->
+              </li>
+            </ng-container>
           </ul>
         </div>
         <!--End row-->
@@ -136,46 +224,4 @@
     <!--End block content-->
   </div>
   <!--End content-->
-
-  <!--Button-->
-  <div class="button ofsInTop tCenter clearfix">
-    <div class="divider">
-      <div class="zigzag large clearfix" data-svg-drawing="yes">
-        <svg
-          xml:space="preserve"
-          viewBox="0 0 69.172 14.975"
-          width="37"
-          height="28"
-          y="0px"
-          x="0px"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-        >
-          <path
-            d="M1.357,12.26 10.807,2.81 20.328,12.332
-			29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "
-            style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0"
-          ></path>
-        </svg>
-      </div>
-    </div>
-
-    <!--Row-->
-    <div class="row">
-      <div class="col-md-12">
-        <a href="#" class="animated-button1" (click)="downloadFile()">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Download my cv
-        </a>
-      </div>
-    </div>
-    <!--End row-->
-  </div>
-  <!--End button-->
-</div>
-</section>
-<!--End portfolio-->
+</ng-template>

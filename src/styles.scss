@@ -695,6 +695,9 @@ a, input[type="text"],  textarea, nav.main-nav ul, .lines:before, .contact-form 
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  &:hover{
+    color:white;
+  }
 }
 
 .animated-button1::before {
