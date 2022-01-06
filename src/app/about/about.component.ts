@@ -76,7 +76,7 @@ export class AboutComponent implements OnInit {
     },
     {
       company:"Psycoders - software engineer",
-      duration:'01/2020 – present',
+      duration:'Project based',
       activities:[
         {
           title:'NewGame',
@@ -101,7 +101,7 @@ export class AboutComponent implements OnInit {
       ]
     },
     {
-      company:"Fiverr - Photoshop Automator",
+      company:"Fiverr - Photoshop Automator (Freelance)",
       duration:'01/2017 – present',
       activities:[
         {

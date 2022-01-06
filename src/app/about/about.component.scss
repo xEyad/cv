@@ -615,10 +615,14 @@ margin-bottom:0;
 }
 
 .exp .hgroup h4{
-text-transform:none;
-
+  text-transform:none;
+  font-weight: bold;
 }
 
+.exp p
+{
+  color: black;
+}
 
 .exp .hgroup{
 margin-bottom:5px;
