@@ -731,7 +731,13 @@ padding-right:30px;
 color:#666666;
 }
 
-
+.block.service {
+  justify-content: center;
+  display: flex;
+  .col-md-4{
+    padding:5px;
+  }
+}
 
 /*------------------------ End about section ------------------------*/
 

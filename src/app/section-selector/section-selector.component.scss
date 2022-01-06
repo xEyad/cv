@@ -259,7 +259,12 @@ transform: scaleX(1);
   color: white;
 }
 
-
+.main-nav li:hover{
+  color: white;
+  a:hover{
+    color: white;
+  }
+}
 
 .main-nav li a.active:before {
 color:#ffffff;
