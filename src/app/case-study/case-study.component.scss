@@ -889,7 +889,11 @@ line-height:50px;
 font-size:13px;
 }
 
-
+.block-single.margBottom.clearfix
+{
+  display: flex;
+justify-content: center;
+}
 
 /*------------------------ End portfolio section ------------------------*/
 
