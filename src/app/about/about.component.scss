@@ -581,7 +581,7 @@ line-height:45px;
 
 
 .timeline.experience:after{
-content: '\e8ba';
+content: url('src/assets/briefcaseSmall.png');
 }
 
 .timeline.education:after{
@@ -657,13 +657,39 @@ font-size:13px;
 }
 
 
+.block.service {
+  justify-content: start;
+  flex-wrap: wrap;
+  display: flex;
+
+    .col-md-4{
+      margin-bottom: 50px;
+    padding:5px;
+  }
+}
+
 .block.service .ico{
 font-size:30px;
 margin-bottom:10px;
 color: #cd5353;
+width: 100px;
+height: 100px;
+text-align: center;
 }
 
-
+.company {
+	position: relative;
+	left: 66px;
+	top: 8px;
+  h4{
+    color: black;
+    font-weight: bold;
+    margin: 0px;
+  }
+  h6{
+    color: grey;
+  }
+}
 
 
 
@@ -729,14 +755,6 @@ font-size:16px;
 line-height:24px;
 padding-right:30px;
 color:#666666;
-}
-
-.block.service {
-  justify-content: center;
-  display: flex;
-  .col-md-4{
-    padding:5px;
-  }
 }
 
 /*------------------------ End about section ------------------------*/

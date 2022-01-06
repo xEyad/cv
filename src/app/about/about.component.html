@@ -35,27 +35,28 @@
       <!--Block content-->
       <div class="block-content margBSmall">
         <div class="profile margBSmall">
-          <h1>Carlose smith</h1>
-          <h3>Web designer / Web developer</h3>
+          <h1>Eyad hisham</h1>
+          <h3>Frontend Engineer</h3>
         </div>
 
         <!--Row-->
         <div class="row">
           <div class="col-md-6">
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem.
+              I'm a Software Engineer, I worked in many development roles such
+              as developer, business analyst, project manager, product owner and
+              even account manager. I created many commercial apps in wide
+              variety of platforms/industries/domains. I have built 6+
+              commercial mobile apps, 200+ Photoshop scripts and 7+ commercial
+              web systems.
             </p>
           </div>
 
           <div class="col-md-6">
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem.
+              If you have the link to this online cv, this probably means i am
+              looking for a job in any of the following positions. Flutter lead,
+              Angular lead, Project manager
             </p>
           </div>
         </div>
@@ -72,15 +73,15 @@
               <ul class="info-list clearfix">
                 <li>
                   <span class="inf">Name </span>
-                  <span class="value">Carlose Smith</span>
+                  <span class="value">Eyad Hisham</span>
                 </li>
                 <li>
                   <span class="inf">Date of birth</span>
-                  <span class="value"> September 9, 1982 </span>
+                  <span class="value"> January 10, 1996 </span>
                 </li>
                 <li>
                   <span class="inf">Address</span>
-                  <span class="value"> 1234 Street Road City Name</span>
+                  <span class="value"> Egypt - Cairo - Nasr city</span>
                 </li>
               </ul>
             </div>
@@ -89,15 +90,15 @@
               <ul class="info-list">
                 <li>
                   <span class="inf">Email</span>
-                  <span class="value">youremail@gmail.com</span>
+                  <span class="value">eyadhisham@gmail.com</span>
                 </li>
                 <li>
                   <span class="inf">Phone</span>
-                  <span class="value"> + 123 456 789 456 </span>
+                  <span class="value"> +20 11 000 990 39 </span>
                 </li>
                 <li>
-                  <span class="inf">Skype</span>
-                  <span class="value">Carlose_Smith</span>
+                  <span class="inf">Discord</span>
+                  <span class="value">Eyad#5389</span>
                 </li>
               </ul>
             </div>
@@ -112,7 +113,7 @@
     <!--Main title-->
 
     <div class="main-title">
-      <h1>professional skills</h1>
+      <h1>Technologies I use</h1>
       <div class="divider">
         <div class="zigzag large clearfix" data-svg-drawing="yes">
           <svg
@@ -141,10 +142,36 @@
     <!--Content-->
     <div class="content">
       <!--Block content-->
-      <div class="block-content margBMedium">
-        <!--Skill design-->
-        <div class="center">Skills</div>
-        <!--End skill design-->
+      <div class="block-content">
+        <!--Services-->
+        <div class="services">
+          <!--Row-->
+          <div class="row">
+            <!--Block-->
+            <div class="block service tCenter">
+              <ng-container *ngFor="let tech of technologies; let i = index">
+                <div
+                  [ngClass]="{ 'm-0': technologies.length - i <= 3 }"
+                  class="col-md-4 d-flex justify-content-center flex-column align-items-center"
+                >
+                  <div class="ico">
+                    <img [src]="tech.icon" alt="" />
+                  </div>
+
+                  <div class="det">
+                    <h3>{{ tech.name }}</h3>
+                    <p>
+                      {{ tech.desc }}
+                    </p>
+                  </div>
+                </div>
+              </ng-container>
+            </div>
+            <!--End block-->
+          </div>
+          <!--End row-->
+        </div>
+        <!--End servcices-->
       </div>
       <!--End block content-->
     </div>
@@ -182,72 +209,40 @@
     <!--Content-->
     <div class="content">
       <!--Block content-->
-      <div class="block-content">
-        <!--Timeline-->
-        <div class="timeline experience">
-          <!--Row-->
-          <div class="row">
-            <div class="col-md-12">
-              <!--Experience holder-->
-              <div class="exp-holder margTop">
-                <!--Experience-->
-                <div class="exp">
-                  <div class="hgroup">
-                    <h4>WebDesigner – Mutation Media</h4>
-                    <h6>
-                      <i class="icon-calendar"></i>Feb 2015 -
-                      <span class="current">Current</span>
-                    </h6>
-                  </div>
-                  <p>
-                    Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in
-                    reprehend incididunt labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat inventore veritatis
-                    et quasi architecto beatae vitae dicta sunt explicabo.
-                  </p>
+      <ng-container *ngFor="let experience of experience">
+        <div class="block-content mb-4">
+          <!--Timeline-->
+          <div class="timeline experience">
+            <!--Row-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="company">
+                  <h4>{{ experience.company }}</h4>
+                  <h6>{{ experience.duration }}</h6>
                 </div>
-                <!--End experience-->
-
-                <!--Experience-->
-                <div class="exp">
-                  <div class="hgroup">
-                    <h4>Web Developer – Mutation Media</h4>
-                    <h6><i class="icon-calendar"></i>Sept 2015 - Nov 2015</h6>
-                  </div>
-                  <p>
-                    Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in
-                    reprehend incididunt labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat inventore veritatis
-                    et quasi architecto beatae vitae dicta sunt explicabo.
-                  </p>
+                <!--Experience holder-->
+                <div class="exp-holder margTop">
+                  <!--Experience-->
+                  <ng-container *ngFor="let activity of experience.activities">
+                    <div class="exp">
+                      <div class="hgroup">
+                        <h4>{{ activity.title }}</h4>
+                      </div>
+                      <p>
+                        {{ activity.desc }}
+                      </p>
+                    </div>
+                  </ng-container>
+                  <!--End experience-->
                 </div>
-                <!--End experience-->
-
-                <!--Experience-->
-                <div class="exp">
-                  <div class="hgroup">
-                    <h4>SDK Developer – Mutation Media</h4>
-                    <h6><i class="icon-calendar"></i>May 2015 - Sept 2015</h6>
-                  </div>
-                  <p>
-                    Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in
-                    reprehend incididunt labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat inventore veritatis
-                    et quasi architecto beatae vitae dicta sunt explicabo.
-                  </p>
-                </div>
-                <!--End experience-->
+                <!--End experience holder-->
               </div>
-              <!--End experience holder-->
             </div>
+            <!--End row-->
           </div>
-          <!--End row-->
+          <!--End timeline-->
         </div>
-        <!--End timeline-->
-      </div>
+      </ng-container>
       <!--End block content-->
     </div>
     <!--End content-->
@@ -295,47 +290,13 @@
                 <!--Experience-->
                 <div class="exp">
                   <div class="hgroup">
-                    <h4>Bachelor Degree – Mutation Media</h4>
-                    <h6><i class="icon-calendar"></i>Mar 2015 - May 2015</h6>
+                    <h4>Bachelor Degree – Computer science</h4>
+                    <h6><i class="icon-calendar"></i>2013 - 2017</h6>
                   </div>
                   <p>
-                    Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in
-                    reprehend incididunt labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat inventore veritatis
-                    et quasi architecto beatae vitae dicta sunt explicabo.
-                  </p>
-                </div>
-                <!--End experience-->
-
-                <!--Experience-->
-                <div class="exp">
-                  <div class="hgroup">
-                    <h4>Master Degree – Mutation Media</h4>
-                    <h6><i class="icon-calendar"></i>Sept 2015 - Nov 2015</h6>
-                  </div>
-                  <p>
-                    Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in
-                    reprehend incididunt labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat inventore veritatis
-                    et quasi architecto beatae vitae dicta sunt explicabo.
-                  </p>
-                </div>
-                <!--End experience-->
-
-                <!--Experience-->
-                <div class="exp">
-                  <div class="hgroup">
-                    <h4>School Of Science – Mutation Media</h4>
-                    <h6><i class="icon-calendar"></i>May 2015 - Sept 2015</h6>
-                  </div>
-                  <p>
-                    Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in
-                    reprehend incididunt labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat inventore veritatis
-                    et quasi architecto beatae vitae dicta sunt explicabo.
+                    Higher Technological Institute
+                    <br />
+                    GPA: 3.0
                   </p>
                 </div>
                 <!--End experience-->
@@ -350,181 +311,6 @@
       <!--End block content-->
     </div>
     <!--End content-->
-
-    <!--Main title-->
-
-    <div class="main-title">
-      <h1>Technologies</h1>
-      <div class="divider">
-        <div class="zigzag large clearfix" data-svg-drawing="yes">
-          <svg
-            xml:space="preserve"
-            viewBox="0 0 69.172 14.975"
-            width="37"
-            height="28"
-            y="0px"
-            x="0px"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-          >
-            <path
-              d="M1.357,12.26 10.807,2.81 20.328,12.332
-29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "
-              style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0"
-            ></path>
-          </svg>
-        </div>
-      </div>
-    </div>
-
-    <!--End main title-->
-
-    <!--Content-->
-    <div class="content">
-      <!--Block content-->
-      <div class="block-content">
-        <!--Services-->
-        <div class="services">
-          <!--Row-->
-          <div class="row">
-            <!--Block-->
-            <div class="block service tCenter">
-              <div class="col-md-4">
-                <div class="ico">
-                  <i class="icon-lifebuoy"></i>
-                </div>
-
-                <div class="det">
-                  <h3>Great Support</h3>
-                  <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium.
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="ico">
-                  <i class="icon-print-1"></i>
-                </div>
-
-                <div class="det">
-                  <h3>Print &amp; Branding</h3>
-                  <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium.
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="ico">
-                  <i class="icon-megaphone"></i>
-                </div>
-
-                <div class="det">
-                  <h3>Marketing</h3>
-                  <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!--End block-->
-          </div>
-          <!--End row-->
-
-          <!--Row-->
-          <div class="row">
-            <!--Divider-->
-            <div class="divider-m tCenter margTSmall margBSmall clearfix">
-              <div class="col-md-12">
-                <div class="zigzag medium clearfix" data-svg-drawing="yes">
-                  <svg
-                    xml:space="preserve"
-                    viewBox="0 0 69.172 14.975"
-                    width="45"
-                    height="5"
-                    y="0px"
-                    x="0px"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns="http://www.w3.org/2000/svg"
-                    version="1.1"
-                  >
-                    <path
-                      d="M1.357,12.26 10.807,2.81 20.328,12.332
-29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "
-                      style="
-                        stroke-dasharray: 93.9851, 93.9851;
-                        stroke-dashoffset: 0;
-                      "
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <!--End divider-->
-          </div>
-          <!--End row-->
-
-          <!--Row-->
-          <div class="row">
-            <!--Block-->
-            <div class="block service tCenter">
-              <div class="col-md-4">
-                <div class="ico">
-                  <i class="icon-monitor"></i>
-                </div>
-
-                <div class="det">
-                  <h3>Web Design</h3>
-                  <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium.
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="ico">
-                  <i class="icon-tools"></i>
-                </div>
-
-                <div class="det">
-                  <h3>development</h3>
-                  <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium.
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="ico">
-                  <i class="icon-lamp"></i>
-                </div>
-
-                <div class="det">
-                  <h3>Branding</h3>
-                  <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!--End block-->
-          </div>
-          <!--End row-->
-        </div>
-        <!--End servcices-->
-      </div>
-      <!--End block content-->
-    </div>
-    <!--End content-->
-
 
     <!--Button-->
     <div class="button margTop ofsInTop tCenter">
@@ -551,10 +337,15 @@
       </div>
 
       <!--Row-->
-      <div class="row ">
+      <div class="row">
         <div class="col-md-12">
-          <a class="but opc-1 ico" href="#">Download my cv</a>
-          <a class="but opc-2 ico" href="#">Print my resume</a>
+          <a href="#" class="animated-button1" (click)="downloadFile()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Download my cv
+          </a>
         </div>
       </div>
       <!--End row-->
