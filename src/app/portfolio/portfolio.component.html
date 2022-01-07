@@ -35,41 +35,7 @@
     <!--End main title-->
 
     <!--Content-->
-    <div class="content">
-      <!--Block content-->
-      <div class="block-content">
-        <!--Works-->
-        <div class="works">
-          <h3>Portfolio</h3>
-          <p>
-            You can find portfolio images for apps and systems i created in this
-            <a
-              href="https://drive.google.com/drive/folders/1o0rgJ3f4htCBNtM_UN9ktwYSRfa61Gc-"
-              target="_blank"
-              >link</a
-            >
-          </p>
-
-          <h3 class="mt-5">Technical demos</h3>
-          <p>
-            Here is some apps that were created solely to demonstrate techincal
-            prowess or feature
-          </p>
-          <ul>
-            <li>
-              <a href="https://xeyad.github.io/maze_warrior" target="_blank"
-                >Visual pathfinder</a
-              >
-            </li>
-            <li>
-              <a href="https://xeyad.github.io/widgets-demo" target="_blank"
-                >Dynamic widgets builder</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <ng-template [ngTemplateOutlet]="complexView" ></ng-template>
     <!--End content-->
 
     <!--Button-->
@@ -115,7 +81,7 @@
 </section>
 <!--End portfolio-->
 
-<ng-template #tempDisabled>
+<ng-template #complexView>
   <!--Content-->
   <div class="content">
     <!--Block content-->
@@ -126,10 +92,11 @@
         <div class="row">
           <div class="block-filter tCenter">
             <ul id="category" class="filter">
-              <li><a data-filter="all" href="#" class="active">all</a></li>
-              <li><a data-filter="web" href="#">Web design</a></li>
-              <li><a data-filter="graphic" href="#">Graphic design</a></li>
-              <li><a data-filter="motion" href="#">Motion Graphic</a></li>
+              <li><a (click)="setActiveFilter(Filter.all)" href="#" [ngClass]="{'active': activeFilter==Filter.all}">All</a></li>
+              <li><a (click)="setActiveFilter(Filter.web)"[ngClass]="{'active': activeFilter==Filter.web}" href="#">Web design</a></li>
+              <li><a (click)="setActiveFilter(Filter.android)" [ngClass]="{'active': activeFilter==Filter.android}"href="#">Android</a></li>
+              <li><a (click)="setActiveFilter(Filter.ios)" [ngClass]="{'active': activeFilter==Filter.ios}"href="#">IOS</a></li>
+              <li><a (click)="setActiveFilter(Filter.demo)" [ngClass]="{'active': activeFilter==Filter.demo}"href="#">Technical demo</a></li>
             </ul>
           </div>
         </div>
@@ -169,14 +136,14 @@
         <!--Row-->
         <div class="row">
           <ul class="work">
-            <ng-container *ngFor="let item of items">
+            <ng-container *ngFor="let item of getItems()">
               <li class="col-md-4">
                 <!--Item-->
                 <div class="item web">
-                  <a class="box" href="case-study/waterway">
+                  <a class="box" [href]="item.link" target="_blank">
                     <div class="desc">
                       <h3 class="proj-desc">
-                        Project Name
+                        {{item.name}}
                         <span
                           class="zigzag work clearfix"
                           data-svg-drawing="yes"
@@ -203,11 +170,11 @@
                           </svg>
                         </span>
 
-                        <span>web design</span>
+                        <span>{{item.platform}}</span>
                       </h3>
                     </div>
 
-                    <img alt="" src="assets/profile.jpg" />
+                    <img alt="" [src]="item.image" />
                   </a>
                 </div>
                 <!--End item-->
@@ -224,4 +191,43 @@
     <!--End block content-->
   </div>
   <!--End content-->
+</ng-template>
+
+
+<ng-template #simpleView>
+  <div class="content">
+    <!--Block content-->
+    <div class="block-content">
+      <!--Works-->
+      <div class="works">
+        <h3>Portfolio</h3>
+        <p>
+          You can find portfolio images for apps and systems i created in this
+          <a
+            href="https://drive.google.com/drive/folders/1o0rgJ3f4htCBNtM_UN9ktwYSRfa61Gc-"
+            target="_blank"
+            >link</a
+          >
+        </p>
+
+        <h3 class="mt-5">Technical demos</h3>
+        <p>
+          Here is some apps that were created solely to demonstrate techincal
+          prowess or feature
+        </p>
+        <ul>
+          <li>
+            <a href="https://xeyad.github.io/maze_warrior" target="_blank"
+              >Visual pathfinder</a
+            >
+          </li>
+          <li>
+            <a href="https://xeyad.github.io/widgets-demo" target="_blank"
+              >Dynamic widgets builder</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </ng-template>
