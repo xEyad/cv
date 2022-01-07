@@ -72,7 +72,7 @@ export class PortfolioComponent implements OnInit {
       name:"Psycoders",
       image:"assets/psycoders.jpg",
       platform:"Web",
-      link:"https://drive.google.com/drive/folders/1o0rgJ3f4htCBNtM_UN9ktwYSRfa61Gc-?usp=sharing"
+      link:"https://psycoders.tech/"
     },
     {
       name:"Venu Egypt",
