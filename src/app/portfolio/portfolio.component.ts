@@ -56,10 +56,10 @@ export class PortfolioComponent implements OnInit {
     //   link:""
     // },
     {
-      name:"Egyptian Vets Syndicate",
+      name:"Egyptian Veterinarians Syndicate",
       image:"assets/vets.png",
       platform:"Ios,Android",
-      link:"https://drive.google.com/drive/folders/1o0rgJ3f4htCBNtM_UN9ktwYSRfa61Gc-?usp=sharing"
+      link:"https://play.google.com/store/apps/details?id=com.vets.syndicate"
     },
     {
       name:"Bondo",
