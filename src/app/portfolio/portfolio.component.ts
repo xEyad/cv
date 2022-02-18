@@ -83,7 +83,7 @@ export class PortfolioComponent implements OnInit {
 
     {
       name:"Visual Pathfinder",
-      image:"assets/web.png",
+      image:"assets/pathfinder.jpg",
       platform:"Technical Demo",
       link:"https://xeyad.github.io/maze_warrior"
     },
