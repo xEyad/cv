@@ -1576,6 +1576,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           platform: "Technical Demo",
           link: "https://xeyad.github.io/maze_warrior"
         }, {
+          name: "Algorithm visualizer",
+          image: "assets/algo_visualizer.png",
+          platform: "Technical Demo",
+          link: "https://xeyad.github.io/algo_visualizer"
+        }, {
           name: "Dynamic widgets builder",
           image: "assets/web.png",
           platform: "Technical Demo",
