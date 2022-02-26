@@ -89,6 +89,13 @@ export class PortfolioComponent implements OnInit {
     },
 
     {
+      name:"Algorithm visualizer",
+      image:"assets/algo_visualizer.png",
+      platform:"Technical Demo",
+      link:"https://xeyad.github.io/algo_visualizer"
+    },
+
+    {
       name:"Dynamic widgets builder",
       image:"assets/web.png",
       platform:"Technical Demo",
