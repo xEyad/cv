@@ -1582,9 +1582,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           link: "https://xeyad.github.io/algo_visualizer"
         }, {
           name: "Dynamic widgets builder",
-          image: "assets/web.png",
+          image: "assets/dynamic-widgets-builder.png",
           platform: "Technical Demo",
           link: "https://xeyad.github.io/widgets-demo"
+        }, {
+          name: "Chess",
+          image: "assets/chess.png",
+          platform: "Technical Demo",
+          link: "https://github.com/xEyad/Chess"
         }];
         this.activeFilter = Filter.all;
       }
