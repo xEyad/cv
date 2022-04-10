@@ -951,6 +951,12 @@ let PortfolioComponent = class PortfolioComponent {
                 platform: "Technical Demo",
                 link: "https://github.com/xEyad/Chess"
             },
+            {
+                name: "Elapsed circle",
+                image: "assets/elapsed-circle.webp",
+                platform: "Technical Demo",
+                link: "https://xeyad.github.io/Elapsed_circle_widget/"
+            },
         ];
         this.activeFilter = Filter.all;
     }
