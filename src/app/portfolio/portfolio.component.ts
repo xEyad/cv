@@ -49,12 +49,12 @@ export class PortfolioComponent implements OnInit {
       platform:"Web,Ios,Android",
       link:"https://drive.google.com/drive/folders/1o0rgJ3f4htCBNtM_UN9ktwYSRfa61Gc-?usp=sharing"
     },
-    // {
-    //   name:"Axis",
-    //   image:"assets/waterway.jpg",
-    //   platform:"Web,Ios,Android",
-    //   link:""
-    // },
+    {
+      name:"QPR",
+      image:"assets/qpr.webp",
+      platform:"Web",
+      link:""
+    },
     {
       name:"Egyptian Veterinarians Syndicate",
       image:"assets/vets.png",

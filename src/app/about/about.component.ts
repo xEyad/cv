@@ -15,7 +15,12 @@ export class AboutComponent implements OnInit {
     {
       icon:'assets/angular.png',
       name:"Angular",
-      desc:`I build effecient Web apps and systems using Angular 5+  `
+      desc:`I build effecient Web apps and systems using Angular 5+`
+    },
+    {
+      icon:'assets/react.png',
+      name:"React",
+      desc:`I build effecient Web apps, systems and websites using React`
     },
     {
       icon:'assets/extendscript.png',
@@ -51,8 +56,18 @@ export class AboutComponent implements OnInit {
 
   experience = [
     {
+      company:"CrossWorkers - software engineer",
+      duration:'05/2022 – Present',
+      activities:[
+        {
+          title:'QPR',
+          desc:`Working With QPR SOFTWARE on the new gen of Strategy management software that serves big companies and public sector using React as frontend framework.`},
+
+      ]
+    },
+    {
       company:"Fabrica dev - software engineer",
-      duration:'01/2019 – present',
+      duration:'01/2019 – 05/2022',
       activities:[
         {
           title:'Connect Homes',
