@@ -408,7 +408,12 @@ let AboutComponent = class AboutComponent {
             {
                 icon: 'assets/angular.png',
                 name: "Angular",
-                desc: `I build effecient Web apps and systems using Angular 5+  `
+                desc: `I build effecient Web apps and systems using Angular 5+`
+            },
+            {
+                icon: 'assets/react.png',
+                name: "React",
+                desc: `I build effecient Web apps, systems and websites using React`
             },
             {
                 icon: 'assets/extendscript.png',
@@ -443,8 +448,18 @@ let AboutComponent = class AboutComponent {
         ];
         this.experience = [
             {
+                company: "CrossWorkers - software engineer",
+                duration: '05/2022 – Present',
+                activities: [
+                    {
+                        title: 'QPR',
+                        desc: `Working With QPR SOFTWARE on the new gen of Strategy management software that serves big companies and public sector using React as frontend framework.`
+                    },
+                ]
+            },
+            {
                 company: "Fabrica dev - software engineer",
-                duration: '01/2019 – present',
+                duration: '01/2019 – 05/2022',
                 activities: [
                     {
                         title: 'Connect Homes',
@@ -897,12 +912,12 @@ let PortfolioComponent = class PortfolioComponent {
                 platform: "Web,Ios,Android",
                 link: "https://drive.google.com/drive/folders/1o0rgJ3f4htCBNtM_UN9ktwYSRfa61Gc-?usp=sharing"
             },
-            // {
-            //   name:"Axis",
-            //   image:"assets/waterway.jpg",
-            //   platform:"Web,Ios,Android",
-            //   link:""
-            // },
+            {
+                name: "QPR",
+                image: "assets/qpr.webp",
+                platform: "Web",
+                link: ""
+            },
             {
                 name: "Egyptian Veterinarians Syndicate",
                 image: "assets/vets.png",
