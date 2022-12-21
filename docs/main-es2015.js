@@ -452,8 +452,10 @@ let AboutComponent = class AboutComponent {
                 duration: '05/2022 – Present',
                 activities: [
                     {
-                        title: 'QPR',
-                        desc: `Working With QPR SOFTWARE on the new gen of Strategy management software that serves big companies and public sector using React as frontend framework.`
+                        title: 'QPR Helsinki,Finland',
+                        desc: `Working With QPR SOFTWARE on the new gen of Strategy management software that serves big companies and public sector using React as frontend framework.
+          • Created performance tracking software for government entities using React, Redux, Material UI.
+          • Implemented a web-based PowerPoint-like feature for creating complex dashboards using React and Highcharts with the ability to export to PDF and PowerPoint.`
                     },
                 ]
             },

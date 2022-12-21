@@ -882,8 +882,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           company: "CrossWorkers - software engineer",
           duration: '05/2022 – Present',
           activities: [{
-            title: 'QPR',
-            desc: "Working With QPR SOFTWARE on the new gen of Strategy management software that serves big companies and public sector using React as frontend framework."
+            title: 'QPR Helsinki,Finland',
+            desc: "Working With QPR SOFTWARE on the new gen of Strategy management software that serves big companies and public sector using React as frontend framework.\n          \u2022 Created performance tracking software for government entities using React, Redux, Material UI.\n          \u2022 Implemented a web-based PowerPoint-like feature for creating complex dashboards using React and Highcharts with the ability to export to PDF and PowerPoint."
           }]
         }, {
           company: "Fabrica dev - software engineer",
