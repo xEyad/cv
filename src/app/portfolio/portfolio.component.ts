@@ -53,7 +53,7 @@ export class PortfolioComponent implements OnInit {
       name:"QPR",
       image:"assets/qpr.webp",
       platform:"Web",
-      link:""
+      link:"https://drive.google.com/drive/folders/1EUOEnbCVhPD1bCyXjoMHCZxw02HtOfpb?usp=share_link"
     },
     {
       name:"Egyptian Veterinarians Syndicate",
