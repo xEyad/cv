@@ -20,10 +20,10 @@ export class PortfolioComponent implements OnInit {
       link: "https://drive.google.com/drive/folders/1A3zWbGDB5RXWnHyIeGiNeKpo-Z0sbuYU?usp=sharing",
     },
     {
-      name: "Diet Academy",
-      image: "assets/diet academy.webp",
+      name: "Diet hub",
+      image: "assets/diethub.webp",
       platform: "Web,Ios,Android",
-      link: "https://play.google.com/store/apps/details?id=com.attya.dietAcademy",
+      link: "https://apps.apple.com/eg/app/diet-hub-egypt/id1550512424?platform=iphone",
     },
     {
       name: "Castle Developments (CRED)",
@@ -33,7 +33,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       name: "RE/MAX Egypt",
-      image: "assets/remax.jpg",
+      image: "assets/remax.png",
       platform: "Web",
       link: "https://drive.google.com/drive/folders/1QBL4iNb0yYyk2o0r9amcgwxSAxYG6LoN?usp=sharing",
     },
