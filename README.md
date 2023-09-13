@@ -4,7 +4,7 @@ simple online cv that shows my portfolio and contact data
 
 # Development
 
-you need to use node v 16.14
+you need to use node v16.14 or v14.20.1
 you can use nvm-windows to install it
 then npm i
 
